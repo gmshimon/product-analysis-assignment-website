@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react"
 
 const UseRatings = () =>{
-    const[ratings,setRatings] = useState([]);
+    const[reviews,setReviews] = useState([]);
 
     useEffect(()=>{
-        fetch('ratings.json')
+        fetch('reviews.json')
         .then(res=>res.json())
-        .then(data=>setRatings(data))
+        .then(data=>setReviews(data))
     },[])
 
-    return [ratings,setRatings];
+    return [reviews,setReviews];
 }
 
 export default UseRatings;
