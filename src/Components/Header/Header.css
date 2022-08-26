@@ -1,0 +1,9 @@
+.navbar{
+    border-bottom: 1px solid black;
+    padding-bottom:5px;
+    margin-right:50px;
+}
+.navbar:hover{
+    color:orange;
+    border-bottom: 1px solid orange;
+}
