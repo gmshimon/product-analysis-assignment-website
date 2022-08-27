@@ -13,7 +13,7 @@ const Header = () => {
         <div className="text-center">
             <nav className="text-2xl bg-gray-300 h-12">
                 <NavLink style={activeStyle} className="navbar" to="/home">Home</NavLink>
-                <NavLink style={activeStyle} className="navbar" to="/ratings">Ratings</NavLink>
+                <NavLink style={activeStyle} className="navbar" to="/reviews">Ratings</NavLink>
                 <NavLink style={activeStyle} className="navbar" to="/dashboard">Dashboard</NavLink>
                 <NavLink style={activeStyle} className="navbar" to="/blogs">Blogs</NavLink>
             </nav>

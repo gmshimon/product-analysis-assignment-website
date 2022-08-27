@@ -5,8 +5,8 @@ import { faStar,faRegular } from '@fortawesome/free-solid-svg-icons'
 const Review = (props) => {
     const{name,ratings,img,date} = props.review;
     return (
-        <div className="flex items-center border-2
-        mt-4 ml-20 rounded-xl px-2 py-4 bg-slate-200">
+        <div className="flex items-center justify-center border-2
+        mt-4 rounded-xl px-2 py-4 bg-slate-200">
             <div>
                 <img className="rounded-full" width="120px" src={img} alt="" />
             </div>

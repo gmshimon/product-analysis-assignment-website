@@ -12,7 +12,7 @@ const Home = () => {
     let navigate = useNavigate();
 
     const handleClick =() =>{
-        navigate('/ratings');
+        navigate('/reviews');
     }
     return (
         <div>
@@ -20,12 +20,14 @@ const Home = () => {
             <div className="">
                 <h1 className="text-center text-6xl text-purple-400 border-b-2 pb-4">Reviews</h1>
                 <div className="flex justify-center">
-                    {
-                        newReviews.map(review => <Review
-                        key={review.id}
-                        review={review}
-                        ></Review>)
-                    }
+                    <div className="grid grid-cols-3 gap-x-12">
+                        {
+                            newReviews.map(review => <Review
+                            key={review.id}
+                            review={review}
+                            ></Review>)
+                        }
+                    </div>  
                 </div>
                 <div className="text-center mt-10">
                     <button onClick={handleClick} className="bg-purple-300 border-0
